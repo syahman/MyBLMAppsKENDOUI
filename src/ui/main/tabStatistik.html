@@ -1,0 +1,34 @@
+<div id="tabStatistik"
+     data-role="view"
+     data-title="Statistik"
+     data-model="blm.mainViewer.viewModel"
+     data-bind="events:{afterShow:initStatistik}"
+     data-layout="default"
+>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 style="margin-left:0px; font-weight: bold;" class="panel-title" data-bind="text: operHeader"></h3>
+        </div>
+        <div  style="background: #428BCA; ">
+
+        <canvas style="background : sandybrown;" id="canvas"></canvas>
+        <p class="text-justify" style="color: white;">Contoh graph menggunakan library open source CHARTJS. Kendo DATAVIZ memerlukan lesen. Dalam contoh aplikasi Buku555, anda
+        boleh menggunakan sebarang library JQUERY yang compatible dengan KENDOUI.</p>
+            <div style="margin-top: 100%; display: inline-block;"></div>
+
+    </div>
+
+    </div>
+
+
+</div>
+
+<style scoped>
+    #tabStatistik .km-content { background: #428BCA;}
+
+
+
+
+</style>

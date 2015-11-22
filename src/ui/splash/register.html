@@ -1,0 +1,45 @@
+<div id="register"
+     data-role="view"
+     style="background: orange !important;"
+     data-model="blm.registerViewer.viewModel"
+     data-bind="events:{init:init}"
+
+>
+    <div style="margin-top:50px"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-md-offset-4">
+                <!--<h1 class="text-center login-title">Buku555-Log Masuk</h1>-->
+                <div class="account-wall">
+                    <img class="profile-img" src="../../b555.png"
+                         alt="">
+                    <form class="form-signin">
+
+                        <input id="rname" type="text" class="form-control" placeholder="Nama" required>
+                        <input id="remel" type="text" class="form-control" placeholder="Email" required autofocus>
+                        <input id="rpwd1" type="password" class="form-control" placeholder="Password" required>
+                        <input id="rpwd2" type="password" class="form-control" placeholder="Password (Ulang)" required>
+
+
+
+
+
+                        <button data-bind="click:register" class="btn btn-lg btn-primary btn-block">
+                            Daftar Sekarang</button>
+
+                    </form>
+                </div>
+               <!-- <a href="#" class="text-center new-account">Daftar Akaun Baru </a>-->
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<style scoped>
+    #register .km-content { background: #fde90c;}
+
+
+
+</style>

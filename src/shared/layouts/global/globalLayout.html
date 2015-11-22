@@ -1,0 +1,68 @@
+<section data-role="layout" data-id="default"  >
+    <header data-role="header">
+
+    <div class="jumbotron">
+        <img  src="../../mainlogo.png"
+             alt="">
+            <p class="text-primary" style="color:black !important; font-weight: bold !important;">&nbsp;&nbsp;Urus Kewangan Anda</p>
+            <!--<p><a data-bind = "click: viewProfail" class="btn btn-primary btn-lg" style="color:black !important; font-weight: bold !important;">Profail</a></p>-->
+        <ul id="menu" class="mfb-component--tr mfb-zoomin" data-mfb-toggle="hover"   >
+            <li class="mfb-component__wrap">
+                <a href="#tabHasil" class="mfb-component__button--main">
+                    <i class="mfb-component__main-icon--resting ion-plus-round"></i>
+                    <i class="mfb-component__main-icon--active ion-close-round"></i>
+                </a>
+                <ul class="mfb-component__list">
+                    <li>
+                        <a  href="#frmBelanja" data-mfb-label="Tambah Belanja" class="mfb-component__button--child">
+                            <i class="mfb-component__child-icon ion-fork"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#frmHasil"  data-mfb-label="Tambah Pendapatan" class="mfb-component__button--child">
+                            <i class="mfb-component__child-icon ion-calculator"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#frmHutang"  data-mfb-label="Tambah Hutang" class="mfb-component__button--child">
+                            <i class="mfb-component__child-icon ion-ios-timer"></i>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#frmProfail"  data-mfb-label="Profail Anda" class="mfb-component__button--child">
+                            <i class="mfb-component__child-icon ion-android-person"></i>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    </header>
+
+
+    <!--View content will render here-->
+
+
+
+    <div data-role="footer" style="background: #428BCA;">
+        <div style="margin-top:2px;"></div>
+        <div data-role="tabstrip">
+            <a style="color:#fde90c;"  href="#tabHasil" data-icon="toprated">Hasil
+            </a><a style="color:#fde90c;"   href="#tabBelanja" data-icon="cart">Belanja
+        </a><a style="color:#fde90c;"  href="#tabHutang" data-icon="bookmarks">Hutang
+        </a><a style="color:#fde90c;"  href="#tabStatistik" data-icon="about">Statistik</a>
+        </div>
+    </div>
+</section>
+<style scoped>
+    #menu i {
+        color: #fde90c;
+    }
+</style>
+

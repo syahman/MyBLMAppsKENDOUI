@@ -1,0 +1,76 @@
+<!--template tabhasil-->
+
+
+
+
+
+
+
+
+<script type="text/x-kendo-template" id="header-template">
+    #:TRXDATE#
+</script>
+
+
+<script type="text/x-kendo-template" id="hasilTemplate">
+
+    #  if (!TRXID) {   #
+    <a href="\\#" class="list-group-item">
+        <h5 class="list-group-item-heading">Tiada Data</h5>
+    </a>
+
+    # } else {  #
+
+
+    <a href="\\#frmEditHasil" class="list-group-item">
+        <h6 style="font-weight: bold; margin-left: 3px;" class="list-group-item-heading">#:moment(TRXDATE).format('dddd, DD/MM/YYYY h:mm A')#</h6>
+        <span class="badge badge-info">#:AMOUNT#</span>
+        <p class="list-group-item-text" style="color:\\#0c779b; margin-left: 3px;">#:ITEM#</p>
+    </a>
+
+    # }#
+
+</script>
+
+<script type="text/x-kendo-template" id="belanjaTemplate">
+
+    #  if (!TRXID) {   #
+    <a href="\\#" class="list-group-item">
+        <h5 class="list-group-item-heading">Tiada Data</h5>
+    </a>
+
+    # } else {  #
+
+
+    <a href="\\#frmEditBelanja" class="list-group-item">
+        <h6 style="font-weight: bold; margin-left: 3px;" class="list-group-item-heading">#:moment(TRXDATE).format('dddd, DD/MM/YYYY h:mm A')#</h6>
+        <span class="badge badge-info">#:AMOUNT#</span>
+        <p class="list-group-item-text" style="color:\\#0c779b; margin-left: 3px;">#:ITEM#</p>
+    </a>
+
+    # }#
+
+</script>
+
+
+<script type="text/x-kendo-template" id="hutangTemplate">
+
+    #  if (!TRXID) {   #
+    <a href="\\#" class="list-group-item">
+        <h5 class="list-group-item-heading">Tiada Data</h5>
+    </a>
+
+    # } else {  #
+
+
+    <a href="\\#frmEditHutang" class="list-group-item" >
+        <h6 style="font-weight: bold; margin-left: 3px;" class="list-group-item-heading">#:moment(TRXDATE).format('dddd, DD/MM/YYYY h:mm A')#</h6>
+        <span class="badge badge-info">#:AMOUNT#</span>
+        <p class="list-group-item-text" style="color:\\#0c779b; margin-left: 3px;">#:ITEM#</p>
+    </a>
+
+    # }#
+
+</script>
+
+

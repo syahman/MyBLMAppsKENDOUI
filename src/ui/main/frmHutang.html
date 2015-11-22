@@ -1,0 +1,106 @@
+<div id="frmHutang"
+     data-role="view"
+     data-title="Hutang"
+     data-model="blm.mainViewer.viewModel"
+     data-bind="events:{beforeShow:viewAddHutang}"
+     data-layout="frmLayout">
+
+    <header data-role="header">
+
+        <div data-role="navbar" style="background: #428BCA; color:#fde90c;">
+            <a style="color:#fde90c;" href="#tabHutang"  data-role="button" data-icon="home" data-align="left"></a>
+            <span data-role="view-title">My View Title</span>
+
+        </div>
+
+    </header>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 style="margin-left:0px; font-weight: bold;" class="panel-title" data-bind="text: operHeader"></h3>
+        </div>
+        <div class="panel-body">
+
+            <!--add form here-->
+            <div class="form-group">
+                <label style="font-weight: bold;" class="control-label" for="ditem">Sumber/Keterangan</label>
+                <textarea class="form-control" id="ditem" rows="2" data-bind="value: newtrxdata.ITEM"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label style="font-weight: bold;" class="control-label" for="damount" >Amaun</label>
+                <input class="form-control"  id="damount" type="number" data-bind="value: newtrxdata.AMOUNT">
+            </div>
+
+
+            <div class="form-group">
+                <label style="font-weight: bold;" class="control-label" for="trxdateHutang">Tarikh Terima</label>
+                <input id="trxdateHutang" class="form-control"  type="date" data-bind="value: formattedTRXDATE">
+            </div>
+
+            <div class="form-group">
+                <label style="font-weight: bold;" class="control-label" for="trxdatetimeHutang">Masa Terima</label>
+                <input id="trxdatetimeHutang" class="form-control"  type="time" data-bind="value: formattedTRXDATETIME">
+                <input id="dtrxid" class="form-control"  type="hidden" data-bind="value: newtrxdata.TRXID">
+                <input id="dformstate" class="form-control"  type="hidden" data-bind="value: formstate">
+            </div>
+
+
+            <!-- native function APIs DIV -->
+
+            <div class="container">
+                <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group btn-group-sm btn-group-justified btn-group-fill-height">
+                        <a href="#" data-bind="click : gps" class="btn btn-default" role="button">
+                            <strong>GPS</strong><br>
+                            <span>Lokasi</span>
+                        </a>
+                        <a href="#" data-bind="click: kamera" class="btn btn-default" role="button">
+                            <strong>Kamera</strong><br>
+                            <span>Bukti Bergambar</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div></div>
+
+
+
+
+
+
+    <footer data-role="footer">
+        <div class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container">
+
+
+                <button data-bind="events: {click: simpanHutang}" type="button" class="navbar-toggle" style="color:#fde90c;">
+                    <span class="glyphicon glyphicon-floppy-save" data-bind="text:btnOperation"></span>
+                </button>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+
+
+<style scoped>
+    #frmHutang .km-content { background: #428BCA;}
+    .btn-group-fill-height .btn {
+        white-space: normal;
+    }
+
+
+
+</style>

@@ -1,0 +1,67 @@
+<div id="frmProfail"
+     data-role="view"
+     data-title="Profail"
+     data-model="blm.mainViewer.viewModel"
+     data-bind="events:{afterShow:initProfail}"
+     data-layout="frmLayout">
+
+    <header data-role="header">
+
+        <div data-role="navbar" style="background:#428BCA; color:#fde90c;">
+            <a style="color:#fde90c;" href="#tabHutang"  data-role="button" data-icon="home" data-align="left"></a>
+            <span data-role="view-title">My View Title</span>
+
+        </div>
+
+    </header>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 style="margin-left:0px; font-weight: bold;" class="panel-title" data-bind="text: operHeader"></h3>
+        </div>
+        <div class="panel-body">
+    <div class="form-group">
+        <label style="font-weight: bold;" class="control-label" for="name">Nama</label>
+        <input class="form-control"  id="name" type="text" data-bind="value: newuserdata.NAME">
+    </div>
+    <div class="form-group">
+        <label style="font-weight: bold;" class="control-label" for="emel">Emel</label>
+        <input class="form-control"  id="emel" type="text" data-bind="value: newuserdata.EMEL">
+    </div>
+
+    <div class="form-group">
+        <label style="font-weight: bold;" class="control-label" for="pwd">Kata Laluan Asal</label>
+        <input class="form-control"  id="pwd" type="password">
+    </div>
+
+    <div class="form-group">
+        <label style="font-weight: bold;" class="control-label" for="pwdn1">Kata Laluan Baru</label>
+        <input class="form-control"  id="pwdn1" type="password">
+    </div>
+
+    <div class="form-group">
+        <label style="font-weight: bold;" class="control-label" for="pwdn2">Ulang Kata Laluan Baru</label>
+        <input class="form-control"  id="pwdn2" type="password">
+    </div>
+            </div>
+        </div>
+
+
+
+
+    <footer data-role="footer">
+        <div class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container">
+
+
+                <button data-bind="events: {click: simpanProfail}" type="button" class="navbar-toggle" style="color:#fde90c;">
+                    <span class="glyphicon glyphicon-floppy-save" data-bind="text:btnOperation"></span>
+                </button>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+</div>

@@ -1,0 +1,29 @@
+<div id="tabBelanja"
+     data-role="view"
+     data-layout="default"
+     data-model="blm.mainViewer.viewModel"
+     data-bind="events:{beforeShow:initBelanja}"
+>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 style="margin-left:0px; font-weight: bold;" class="panel-title" data-bind="text: operHeader"></h3>
+        </div>
+    </div>
+
+
+
+    <div class="km-listview-wrapper">
+    <ul id="lstbelanja" class="km-widget km-listview km-list km-listview-link" data-role="listview" data-style="inset" data-bind="source: trxDS, events: {click: viewDetBelanja}" data-template="belanjaTemplate" data-fixed-headers="true" data-header-template="header-template"></ul>
+    </div>
+
+</div>
+
+<style scoped>
+    #tabBelanja .km-content { background: #428BCA;}
+
+
+
+
+</style>

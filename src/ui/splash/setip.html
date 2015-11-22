@@ -1,0 +1,36 @@
+<div id="setip"
+     data-role="view"
+     data-model="blm.setipViewer.viewModel"
+     data-bind="events:{afterShow:afterShow}"
+>
+    <div style="margin-top:50px"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-md-offset-4">
+                <!--<h1 class="text-center login-title">Buku555-Log Masuk</h1>-->
+                <div class="account-wall">
+                    <img class="profile-img" src="../../b555.png"
+                         alt="">
+                    <form class="form-signin">
+                        <input id="setiptest" type="text" class="form-control" placeholder="http://<ip>:<port>" required autofocus>
+                        <div style="margin-top: 10%;">
+                        <a data-bind="click:setipnow" class="btn btn-lg btn-primary btn-block" style="color:white;">Test Aplikasi</a>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<style scoped>
+    #setip .km-content { background: #fde90c;}
+
+
+
+</style>

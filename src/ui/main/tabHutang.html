@@ -1,0 +1,28 @@
+<div id="tabHutang"
+     data-role="view"
+     data-layout="default"
+     data-model="blm.mainViewer.viewModel"
+     data-bind="events:{afterShow:initHutang}"
+>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 style="margin-left:0px; font-weight: bold;" class="panel-title" data-bind="text: operHeader"></h3>
+        </div>
+    </div>
+
+
+
+    <div class="km-listview-wrapper">
+        <ul id="lsthutang" class="km-widget km-listview km-list km-listview-link" data-role="listview" data-style="inset" data-bind="source: trxDS, events: {click: viewDetHutang}" data-template="hutangTemplate" data-fixed-headers="true" data-header-template="header-template"></ul>
+    </div>
+
+
+</div>
+
+<style scoped>
+    #tabHutang .km-content { background: #428BCA;}
+
+
+
+</style>
