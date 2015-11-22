@@ -1,15 +1,31 @@
 {
   "name": "MyBLMAppsKENDOUI",
-  "version": "1.0.0",
+  "description": "Mobile Frontend for Buku555 Project",
+  "main": "gulpfile.js",
+  "authors": [
+    "syahman <syahman.mohd@gmail.com>"
+  ],
   "license": "MIT",
+  "homepage": "https://github.com/syahman/MyBLMAppsKENDOUI",
+  "moduleType": [
+    "node"
+  ],
   "private": true,
   "ignore": [
-    "node_modules"
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/wwwDev/bower_components",
+    "test",
+    "tests"
   ],
   "dependencies": {
-    "kendo-ui": "~2015.3.930",
-    "jquery": "~2.1.1",
     "bootstrap": "~3.3.0",
-
+    "canvasResize": "https://github.com/gokercebeci/canvasResize.git#~1.2.0",
+    "Chart.js": "chartjs#~1.0.2",
+    "Ionicons": "ionicons#~2.0.1",
+    "eonasdan-bootstrap-datetimepicker": "~4.17.37",
+    "kendo-ui": "~2015.3.930",
+    "lodash": "~2.4.1"
   }
 }
