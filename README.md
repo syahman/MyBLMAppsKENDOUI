@@ -4,7 +4,7 @@ Ini adalah versi "working" untuk simulasi CRUD bagi RESTful API Server Projek Bu
 boleh didapati disini : [https://github.com/syahman/Buku555NodeAPI](https://github.com/syahman/Buku555NodeAPI). Nota lengkap boleh merujuk blog saya [http://www.shmn.my](http://www.shmn.my).
 Sebarang "bugs" boleh diajukan dengan membuka github issues. 
 
-**Sila ikut arahan di bawah untuk pemasangan pustaka NodeJS dan Bower. **
+**Sila ikut arahan di bawah untuk pemasangan pustaka NodeJS dan Bower.**
  
 
 1. git clone https://github.com/syahman/MyBLMAppsKENDOUI.git 
