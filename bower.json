@@ -1,6 +1,6 @@
 {
   "name": "MyBLMAppsKENDOUI",
-  "description": "Mobile Frontend for Buku555 Project",
+  "description": "Mobile Hybrid Frontend KendoUI Mobile for Buku555 Project",
   "main": "gulpfile.js",
   "authors": [
     "syahman <syahman.mohd@gmail.com>"
