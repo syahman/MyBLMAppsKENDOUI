@@ -32,4 +32,4 @@ Sebarang "bugs" boleh diajukan dengan membuka github issues.
     
 9. gulp dev          
 
-10. rujuk nota Load Dalam Phonegap Build/Cordova di sini [todo](todo)
+10. rujuk nota Load Dalam Phonegap Build/Cordova (akan disediakan kemudian)
